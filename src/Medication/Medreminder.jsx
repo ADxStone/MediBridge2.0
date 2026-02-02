@@ -160,7 +160,7 @@ function MedzReminder() {
         </div>
       )}
 
-      {/* TODAY'S SCHEDULE */}
+
       <section className="bg-white border rounded-xl p-4 space-y-4">
         <h2 className="text-sm font-semibold text-gray-700">
           📅 Today’s Schedule
@@ -177,7 +177,7 @@ function MedzReminder() {
         )}
       </section>
 
-      {/* ALL MEDICATIONS */}
+
       <section className="space-y-4">
         <h2 className="text-sm font-semibold text-gray-700">
           All Medications
@@ -222,7 +222,6 @@ function MedzReminder() {
         )}
       </section>
 
-      {/* INFO */}
       <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-sm text-yellow-800">
         🔔 You’ll receive notifications when it’s time to take your medications.
       </div>
