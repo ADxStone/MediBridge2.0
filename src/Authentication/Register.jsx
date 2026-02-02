@@ -214,7 +214,10 @@ const Registration = () => {
           <button
             type="submit"
             className="w-full bg-blue-600 text-white py-3 rounded-md font-semibold hover:bg-blue-700 transition duration-200"
-          >
+               onClick={() =>
+               { window.location.href='/darshboard';}
+               }
+                 >
             Create Account
           </button>
         </form>
