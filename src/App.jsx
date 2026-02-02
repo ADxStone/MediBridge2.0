@@ -1,7 +1,9 @@
+import EducationPage from "./Pages/EducationPage";
+
 function App () {
   return (
     <div>
-      <h1>Project coming soon</h1>
+      <EducationPage />
     </div>
   )
 }
