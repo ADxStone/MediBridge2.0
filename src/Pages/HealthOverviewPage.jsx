@@ -1,15 +1,16 @@
 import { useState } from 'react';
+import {useAuth} from '../Authentication'
 import WelcomeBanner from '../HealthOverview/WelcomeBanner';
 import HealthForm from '../HealthOverview/HealthForm';
 
 const HealthOverviewPage = () => {
-  const user = {
-    name: 'John Doe',
-    disease: 'Type 1 Diabetes',
-  };
+  const {user} = useAuth(); 
 
   const [showForm, setShowForm] = useState(false);
   const [records, setRecords] = useState([]);
+  if(!user){
+    return <P className="p-4">please register or login first</P>
+  }
 
   const advice = [
     {
