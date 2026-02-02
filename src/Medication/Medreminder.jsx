@@ -58,7 +58,6 @@ function MedzReminder() {
 
   return (
     <div className="max-w-5xl mx-auto space-y-8">
-      {/* HEADER */}
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
@@ -77,7 +76,7 @@ function MedzReminder() {
         </button>
       </div>
 
-      {/* ADD MEDICATION FORM */}
+
       {isFormOpen && (
         <div className="bg-white border rounded-xl p-6 space-y-4">
           <h2 className="font-semibold text-gray-900">New Medication</h2>
