@@ -1,5 +1,5 @@
 import { useState } from "react";
-import MedzSchedule from "./MedzSchedule";
+import MedzSchedule from "./Medschedule";
 
 function MedzReminder() {
   const [isFormOpen, setIsFormOpen] = useState(false);
