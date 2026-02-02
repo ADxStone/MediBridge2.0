@@ -3,15 +3,15 @@ import { adviceData } from "./Advice/Data";
 import Advicecard from "./Advicecard";
 
 const Advicelist = () => {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("All Topics");
 
   const categories = [
-    "All",
+    "All Topics",
     ...new Set(adviceData.map((advice) => advice.category)),
   ];
 
   const filteredAdvice =
-    category === "All"
+    category === "All Topics"
       ? adviceData
       : adviceData.filter((advice) => advice.category === category);
 
