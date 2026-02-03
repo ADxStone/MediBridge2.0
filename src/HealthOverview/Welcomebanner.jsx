@@ -1,13 +1,13 @@
 const WelcomeBanner = ({user}) => {
     return (
-        <div class="bg-linear-to-r/hsl from-indigo-600 to-purple-500"
+        <div class="bg-linear-to-r/hsl bg-indigo-600 rounded-md"
         
         >
-            <h2 className= "text-white"
+            <h2 className= "text-white mx-0.5"
             white
             >
-                Welcome{user ? user.name : 'User'}!
-                </h2>
+            Welcome   {user ? user.name : 'User'}!
+            </h2>
 
             <p className="text-white"
             white

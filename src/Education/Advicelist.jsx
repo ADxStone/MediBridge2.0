@@ -24,7 +24,7 @@ const Advicelist = () => {
             onClick={() => setCategory(cat)}
             className={`px-4 py-2 rounded ${
               category === cat
-                ? "bg-purple-700 text-white"
+                ? "bg-indigo-600 text-white"
                 : "bg-gray-200 text-gray-800"
             }`}
           >
