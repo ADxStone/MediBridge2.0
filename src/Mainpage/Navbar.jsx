@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           {/* Left side - Logo */}
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center">
+            <div className="shrink-0 flex items-center">
               <h1 className="text-2xl font-bold text-blue-600 cursor-pointer" onClick={() => navigate('/')}>
                 MediBridge
               </h1>
