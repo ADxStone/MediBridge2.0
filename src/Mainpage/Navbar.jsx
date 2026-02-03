@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = ({ setActivePage }) => {
   const navigate = useNavigate();
 
-  const isAuthenticated = true; // You can replace with real auth check
+  const isAuthenticated = true;
 
   const navItems = [
     { id: "health-overview", label: "Health Overview", icon: "🏥" },
@@ -12,9 +12,7 @@ const Navbar = ({ setActivePage }) => {
     { id: "education", label: "Education", icon: "📚" },
   ];
 
-  // Logout handler
   const handleLogout = () => {
-    // Clear authentication state here if needed
     console.log("Logging out...");
     navigate("/login");
   };
@@ -23,7 +21,6 @@ const Navbar = ({ setActivePage }) => {
     <nav className="bg-white shadow-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center">
             <h1
               className="text-2xl font-bold text-indigo-600 cursor-pointer"
@@ -33,7 +30,6 @@ const Navbar = ({ setActivePage }) => {
             </h1>
           </div>
 
-          {/* Dashboard tabs */}
           {isAuthenticated && (
             <div className="hidden md:flex items-center space-x-4">
               {navItems.map((item) => (
@@ -49,7 +45,6 @@ const Navbar = ({ setActivePage }) => {
             </div>
           )}
 
-          {/* Account & Logout */}
           <div className="flex items-center space-x-4">
             {isAuthenticated ? (
               <>
