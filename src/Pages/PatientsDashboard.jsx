@@ -3,13 +3,11 @@ import Navbar from "../Mainpage/Navbar";
 import HealthOverview from "./HealthOverviewPage";
 import Education from "./EducationPage";
 import Medication from "./MedicationPage";
-import Account from "./AccountPage"; // <-- New Account page
+import Account from "./AccountPage";
 
 const PatientsDashboard = () => {
-  // Track which page/tab is active
   const [activePage, setActivePage] = useState("health-overview");
 
-  // Function to render the correct component
   const renderPage = () => {
     switch (activePage) {
       case "health-overview":
